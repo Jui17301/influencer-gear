@@ -44,6 +44,9 @@ nav>ul>li{
 .banner-title{
   font-size: 52px;
 }
+.banner-img{
+  background-image: url(./images/Circle\ design.svg);
+}
 .logos{
   display: flex;
   justify-content: space-evenly;
@@ -92,4 +95,68 @@ h2{
 }
 .div-content{
   text-align: left;
+}
+.gear{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.gear-content h2{
+  color:#0A0826;
+  font-size: 38px;
+}
+.gear-content p{
+  color: #6C6C6C;
+  font-size: 16px;
+}
+footer{
+  background-color: #0A0826;
+  text-align: center;
+  color:#FFF;
+  padding: 30px;
+}
+footer p{
+  color:#6C6C6C
+}
+
+/* responsive for mobile device */
+
+@media screen and (max-width:576px){
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .banner{
+    flex-direction: column-reverse;
+  }
+  .btn-primary{
+    left: 50%;
+  }
+  
+  .logos{
+    flex-wrap: wrap;
+      
+  }
+  .popular-title{
+  text-align: center;}
+
+  .popular-collections-table{
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  
+  .gear{
+    flex-direction: column-reverse;
+  }
+  .gear-content{
+    text-align: center;
+  }
+  .gear img{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+  }
 }
